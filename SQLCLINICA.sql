@@ -19,12 +19,12 @@ USE `ClinicaBGA` ;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `ClinicaBGA`.`Paciente` (
   `DocumentoDeIdentidad` INT NOT NULL,
-  `Nombres` VARCHAR(45) NOT NULL,
-  `Apellidos` VARCHAR(45) NOT NULL,
-  `Direccion` VARCHAR(45) NOT NULL,
+  `Nombres` VARCHAR(100) NOT NULL,
+  `Apellidos` VARCHAR(100) NOT NULL,
+  `Direccion` VARCHAR(100) NOT NULL,
   `Telefono` INT NOT NULL,
-  `Email` VARCHAR(45) NOT NULL,
-  `Contacto emergencia` VARCHAR(45) NOT NULL,
+  `Email` VARCHAR(100) NOT NULL,
+  `Contacto emergencia` VARCHAR(100) NOT NULL,
   `Telefono emergencia` INT NOT NULL,
   PRIMARY KEY (`DocumentoDeIdentidad`),
   UNIQUE INDEX `DocumentoDeIdentidad_UNIQUE` (`DocumentoDeIdentidad` ASC) VISIBLE)
